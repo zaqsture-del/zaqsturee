@@ -241,14 +241,14 @@ window.muteAllVideos=muteAllVideos;
     </div>
     <div class="relative z-10 px-4 pt-4 space-y-3 w-full">
       <div id="setoranStatus" class="rounded-2xl bg-emerald-500/10 border border-emerald-500/20 p-3 flex gap-2 backdrop-blur w-full"><span class="text-emerald-400">●</span><div class="text-[12px] text-emerald-200"><b id="setoranStatusText">OPEN</b> • ZAQSTURE • 30%</div></div>
-      <div class="rounded-[16px] bg-[#f5f0d0]/95 text-black p-3 text-[11px] leading-5 w-full"><div class="font-black">FORMAT WAJIB:</div><div class="font-mono text-[10px]">...isi123@gmail.com tanpa titik</div><div class="mt-2 flex gap-2"><span class="px-2 py-0.5 rounded bg-black text-white text-[9px] font-bold">Password: fineirga</span><button onclick="window.copyPass()" class="px-2 py-0.5 rounded-full bg-black text-white text-[9px]">Salin</button></div></div>
+      <div class="rounded-[16px] bg-[#f5f0d0]/95 text-black p-3 text-[11px] leading-5 w-full"><div class="font-black">FORMAT WAJIB:</div><div class="font-mono text-[10px]">...tcn123@gmail.com tanpa titik</div><div class="mt-2 flex gap-2"><span class="px-2 py-0.5 rounded bg-black text-white text-[9px] font-bold">Password: prabujaya</span><button onclick="window.copyPass()" class="px-2 py-0.5 rounded-full bg-black text-white text-[9px]">Salin</button></div></div>
       <div id="autoRulesBox" class="rounded-[18px] bg-[#fef9c3] text-black p-4 border border-yellow-200 w-full">
         <div class="font-black text-[12px]">RULES SETOR:</div>
         <div class="mt-2 text-[11px] leading-5">
-          <div>Format: (nama)(isi)(angka)@gmail.com</div>
+          <div>Format: (nama)(tcn)(angka)@gmail.com</div>
           <div>SALAH: melisaindah123@gmail.com</div>
-          <div>BENAR: melisaindahisi123@gmail.com</div>
-          <div class="mt-2">Password: fineirga | Tahun 1999-2001</div>
+          <div>BENAR: melisaindahtcn123@gmail.com</div>
+          <div class="mt-2">Password: prabujaya | Tahun 2000-2004</div>
           <div class="text-[9px] mt-1 font-bold text-red-600">3x ditolak = BANNED</div>
         </div>
         <button onclick="document.getElementById('autoRulesBox').classList.add('hidden')" class="mt-3 w-full py-2 rounded-full bg-black text-white font-bold text-[10px]">Oke Mengerti</button>
@@ -493,7 +493,7 @@ async function loadAzanMain(){
   }
  }catch(e){}
 }
-function copyPass(){ navigator.clipboard.writeText('fineirga'); showToast('Password disalin: fineirga'); }
+function copyPass(){ navigator.clipboard.writeText('prabujaya'); showToast('Password disalin: prabujaya'); }
 function switchView(view){
  if(view==='stor'){
   var hour=new Date().getHours();
@@ -879,8 +879,8 @@ window.changeAvatar=changeAvatar; window.resetAvatar=resetAvatar; window.loadAva
       </div>
     </div>
     <div class="p-5 overflow-y-auto flex-1 text-[11px] leading-5 text-white/70 space-y-3">
-      <div class="rounded-xl bg-yellow-500/10 border border-yellow-500/20 p-3"><div class="text-yellow-400 font-black text-[11px]">FORMAT EMAIL WAJIB:</div><div class="mt-1 font-mono text-[11px] font-bold text-white">(namadepan)(namabelakang)isi(3angka)@gmail.com</div><div class="text-[9px] mt-1">Tanpa ada titik . di email</div><div class="mt-2 space-y-1 text-[10px]"><div class="font-bold text-red-400">SALAH:</div><div class="font-mono">melisaindah123@gmail.com</div><div class="font-mono">febrianakuti456@gmail.com</div><div class="font-mono">rudi.santosoisi123@gmail.com (ada titik)</div><div class="font-bold text-emerald-400 mt-2">BENAR:</div><div class="font-mono font-bold text-white">melisaindahisi123@gmail.com</div><div class="font-mono font-bold text-white">febrianakutiisi456@gmail.com</div><div class="font-mono font-bold text-white">rudisantosoisi789@gmail.com</div></div></div>
-      <div class="space-y-2"><div class="text-white font-bold">PASSWORD & TAHUN:</div><div class="flex gap-2"><span class="px-2 py-0.5 rounded bg-white text-black text-[10px] font-bold">Password: fineirga</span><span class="px-2 py-0.5 rounded bg-white/10 border border-white/10 text-white text-[10px]">Tahun: 1999-2001</span></div><div class="text-[10px]">Password Gmail harus <b class="text-white">fineirga</b>, Tahun lahir <b class="text-white">1999 sampai 2001</b> acak.</div></div>
+      <div class="rounded-xl bg-yellow-500/10 border border-yellow-500/20 p-3"><div class="text-yellow-400 font-black text-[11px]">FORMAT EMAIL WAJIB:</div><div class="mt-1 font-mono text-[11px] font-bold text-white">(namadepan)(namabelakang)tcn(3angka)@gmail.com</div><div class="text-[9px] mt-1">Tanpa ada titik . di email</div><div class="mt-2 space-y-1 text-[10px]"><div class="font-bold text-red-400">SALAH:</div><div class="font-mono">melisaindah123@gmail.com</div><div class="font-mono">febrianakuti456@gmail.com</div><div class="font-mono">rudi.santosotcn123@gmail.com (ada titik)</div><div class="font-bold text-emerald-400 mt-2">BENAR:</div><div class="font-mono font-bold text-white">melisaindahtcn123@gmail.com</div><div class="font-mono font-bold text-white">febrianakutitcn456@gmail.com</div><div class="font-mono font-bold text-white">rudisantosotcn789@gmail.com</div></div></div>
+      <div class="space-y-2"><div class="text-white font-bold">PASSWORD & TAHUN:</div><div class="flex gap-2"><span class="px-2 py-0.5 rounded bg-white text-black text-[10px] font-bold">Password: prabujaya</span><span class="px-2 py-0.5 rounded bg-white/10 border border-white/10 text-white text-[10px]">Tahun: 2000-2004</span></div><div class="text-[10px]">Password Gmail harus <b class="text-white">prabujaya</b>, Tahun lahir <b class="text-white">2000 sampai 2004</b> acak.</div></div>
       <div class="rounded-xl bg-red-500/10 border border-red-500/20 p-3"><div class="text-red-400 font-black text-[11px]">PERATURAN KERAS:</div><ul class="mt-2 space-y-1 text-[10px] list-disc pl-4"><li>3x salah format / password salah = <b class="text-red-400">BANNED PERMANEN</b></li><li>Dilarang setor gmail yang sudah pernah di ACC</li><li>Dilarang setor gmail titik (.) - admin cek manual</li><li>Dilarang spam / setor gmail ngawur</li><li>Gmail harus fresh, belum pernah dipakai</li><li>Foto profil harus asli, tidak boleh fake</li><li>Jika ketahuan curang, saldo hangus & akun banned</li><li>Setoran buka jam 06:00 - 24:00, tutup jam 01:00 - 06:00 WIB (otomatis)</li></ul></div>
       <div class="rounded-xl bg-emerald-500/10 border border-emerald-500/20 p-3"><div class="text-emerald-400 font-black text-[11px]">RATE & WD:</div><ul class="mt-1 space-y-1 text-[10px]"><li>Rate: <b class="text-white">Rp3.500 / Gmail</b> termahal</li><li>ACC: 24-30 jam setelah setor</li><li>WD: All bank & E-Wallet</li><li>Min WD: Rp10.000</li><li>Support 24 jam, anti rusuh, terpercaya</li></ul></div>
       <div class="text-[9px] text-white/30 text-center pt-2">Dengan klik OKE, kamu setuju semua rules di atas.</div>
