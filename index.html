@@ -524,7 +524,7 @@ function kirimSetoranMain(){
  var lines=txt.split('\n').filter(function(s){return s.trim();});
  if(lines.length===0) return showToast('Isi email');
  lines.forEach(function(email){
-   allSetoran.push({id:Date.now()+Math.random()+email, email: email.trim(), user: currentUser.username, tgl: new Date().toLocaleString('id-ID'), status:'pending', amount: 4700});
+   allSetoran.push({id:Date.now()+Math.random()+email, email: email.trim(), user: currentUser.username, tgl: new Date().toLocaleString('id-ID'), status:'pending', amount: 3500});
  });
  localStorage.setItem('zaq_all_setoran',JSON.stringify(allSetoran));
  document.getElementById('gmailBoxMain').value='';
@@ -535,7 +535,7 @@ function kirimSetoranMain(){
 }
 function updateSaldo(){
  var myAccepted=allSetoran.filter(function(s){return s.user===currentUser.username && s.status==='accepted';}).length;
- var total=myAccepted*4700;
+ var total=myAccepted*3500;
  var wdAccepted=allWd.filter(function(w){return w.user===currentUser.username && w.status==='accepted';}).reduce(function(a,b){return a+b.terima;},0);
  var saldo=total-wdAccepted;
  var el=document.getElementById('saldoText'); if(el) el.innerText='Rp'+saldo.toLocaleString('id-ID');
@@ -632,7 +632,7 @@ function calcWd(){
  document.getElementById('wdTerima').innerText='Rp'+terima.toLocaleString();
 }
 function getSaldo(){
- var myAccepted=allSetoran.filter(function(s){return s.user===currentUser.username && s.status==='accepted';}).length*4700;
+ var myAccepted=allSetoran.filter(function(s){return s.user===currentUser.username && s.status==='accepted';}).length*3500;
  var wdAccepted=allWd.filter(function(w){return w.user===currentUser.username && w.status==='accepted';}).reduce(function(a,b){return a+b.terima;},0);
  return myAccepted-wdAccepted;
 }
@@ -834,7 +834,7 @@ window.changeAvatar=changeAvatar; window.resetAvatar=resetAvatar; window.loadAva
         lines.forEach(function(email){
           try{
             var newRef = window.fbPush(window.fbRef(readyDb, 'setoran'));
-            var item={id:newRef.key, email:email.trim(), user: currentUser.username, tgl: new Date().toLocaleString('id-ID'), status:'pending', amount:4700};
+            var item={id:newRef.key, email:email.trim(), user: currentUser.username, tgl: new Date().toLocaleString('id-ID'), status:'pending', amount:3500};
             window.fbSet(newRef, item);
             success++;
           }catch(e){ console.log('fb set error', e); }
